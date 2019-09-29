@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7c85bc"
+    tools:context="com.example.padmank.tictactoe.Welcome">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Welcome to Tic Tac Toe!!!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/p1EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:hint="Enter Player 1 Name" />
+
+    <EditText
+        android:id="@+id/p2EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/p1EditText"
+        android:layout_alignStart="@+id/p1EditText"
+        android:layout_below="@+id/p1EditText"
+        android:layout_marginTop="34dp"
+        android:hint="Enter Player 2 Name" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:text="Begin Game" />
+
+    <Button
+        android:id="@+id/tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-63dp"
+        android:text="Video Tutorial" />
+
+
+</RelativeLayout>
